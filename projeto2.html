@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfólio de Luan Pigato Carlos, desenvolvedor iniciante. Veja meus projetos e entre em contato!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #ffffff;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            /* Plano de fundo */
+            background-size: cover;
+        }
+
+        header {
+            background-color: #1c1f25;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: rgba(44, 47, 51, 0.9);
+            /* Fundo transparente */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #sobre h1,
+        #projetos h2,
+        #contato h2 {
+            color: #61dafb;
+            text-align: center;
+        }
+
+        #projetos .projeto {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+
+        #projetos .projeto img {
+            flex: 1;
+            max-width: 45%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #1c1f25;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            #projetos .projeto img {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Fotos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+            <p>Olá, meu nome é Luan. Sou um desenvolvedor iniciante.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projeto">
+                <h3>Paisagens</h3>
+                <img src="praia1.jpg" alt="Paisagem de uma praia ao pôr do sol" width="300" height="200">
+                <img src="praia2.jpg" alt="Outra paisagem de uma praia com águas cristalinas" width="350" height="200">
+            </div>
+            <div class="projeto">
+                <h3>Neymar</h3>
+                <img src="ney.jpg" alt="Imagem de Neymar comemorando um gol" width="350" height="200">
+                <img src="neymarr.jpg" alt="Imagem de Neymar jogando em campo" width="350" height="200">
+            </div>
+            <div class="projeto">
+                <h4>Palmeiras</h4>
+                <img src="veiga.jpg" alt="Imagem do Veiga comemorando" width="350" height="200">
+                <img src="baixados.jpg" alt="Imagem do Palmeiras campeão" width="350" height="200">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato através do email: <a href="mailto:luanpcc7@gmail.com">luanpcc7@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Luan Pigato Carlos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
